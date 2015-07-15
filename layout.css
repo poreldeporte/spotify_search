@@ -1,0 +1,10 @@
+.header{
+	text-align:center; 
+	background-color:orange;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid;
+}
+.artists{
+	width:350px;
+}
