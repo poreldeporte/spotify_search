@@ -8,11 +8,11 @@ function onSubmit (event) {
 	    var id = list.id;
 	    
 	    if (name !== null && images[0] !== undefined) {
-		    $('#list').append("<li><div class=artists pull-left>");
+		    $('#list').append("<li>");
 		    $('#list').append("<span style='font-size:40px;font-weight:bold;'>" + name + "</span><br>");
 		    $('#list').append("<img src='" + images[0].url + "'alt='Artist Images' style='width:250px;height:315px;'><br>");
-		    $('#list').append("<button style='width:250px;' type='submit' id='"+id+"' class='btn btn-warning'>Show Albums</button>");
-		    $('#list').append("</div></li>");
+		    $('#list').append("<button style='width:250px;' type='submit' id='"+id+"' class='btn btn-warning'>Show Albums</button><br>");
+		    $('#list').append("</li>");
 
 	    	var alb_list = $.get("https://api.spotify.com/v1/artists/"+ id +"/albums");
 	    	console.log("list" + alb_list);
