@@ -1,5 +1,7 @@
 function onSubmit (event) {
   event.preventDefault();
+  $('#list').empty();
+  $('#albums').empty();
   function onSaveSuccess (response) {
     console.debug('BOOM', response);
     response.artists.items.forEach(function(list){
